@@ -1,0 +1,14 @@
+### Create User
+POST http://localhost:8080/api/app-user
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "Alice@hotmail.com"
+}
+
+### Get All Users
+GET http://localhost:8080/api/app-user
+
+### Get User By Name
+GET http://localhost:8080/api/app-user/Test%20User2
