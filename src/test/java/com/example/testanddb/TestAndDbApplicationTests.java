@@ -1,12 +1,8 @@
 package com.example.testanddb;
 
-import com.example.testanddb.business.controller.AppUserController;
 import com.example.testanddb.business.po.AppUser;
-import com.example.testanddb.business.service.AppUserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
