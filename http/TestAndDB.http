@@ -1,5 +1,5 @@
 ### Create User
-POST http://localhost:8080/api/app-user
+POST http://localhost:8081/api/app-user
 Content-Type: application/json
 
 {
@@ -8,7 +8,28 @@ Content-Type: application/json
 }
 
 ### Get All Users
-GET http://localhost:8080/api/app-user
+GET http://localhost:8081/api/app-user
 
 ### Get User By Name
-GET http://localhost:8080/api/app-user/Test%20User2
+GET http://localhost:8081/api/app-user/Test%20User2
+
+### Start Async
+GET http://localhost:8081/demo-start-async
+
+### Wait for Async
+GET http://localhost:8081/demo-wait-for-async
+
+### Start Async2
+GET http://localhost:8081/demo-start-async2
+
+### Send First Request
+GET http://localhost:8081/receive-first
+
+### Send First Request
+GET http://localhost:8081/receive-first
+
+### Send Second Request
+GET http://localhost:8081/receive-second/HORAHORA
+
+### Send Second Request2
+GET http://localhost:8081/receive-second/ARAARA
