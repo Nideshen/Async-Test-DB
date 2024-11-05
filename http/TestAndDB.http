@@ -25,11 +25,17 @@ GET http://localhost:8081/demo-start-async2
 ### Send First Request
 GET http://localhost:8081/receive-first
 
-### Send First Request
-GET http://localhost:8081/receive-first
-
 ### Send Second Request
 GET http://localhost:8081/receive-second/HORAHORA
 
-### Send Second Request2
-GET http://localhost:8081/receive-second/ARAARA
+### Send First Request 1 (Multi Request)
+GET http://localhost:8081/receive-first-request/11
+
+### Send First Request 2 (Multi Request)
+GET http://localhost:8081/receive-first-request/22
+
+### Send Second Request 1 (Multi Request)
+GET http://localhost:8081/receive-second-request/11/ARAARA
+
+### Send Second Request 2 (Multi Request)
+GET http://localhost:8081/receive-second-request/22/AHOY
