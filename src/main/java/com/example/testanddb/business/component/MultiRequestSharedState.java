@@ -13,13 +13,13 @@ public class MultiRequestSharedState {
     public void setSecondResponse(String id, String response) {
         CompletableFuture<String> future = futureMap.get(id);
         if (future != null) {
-            future.complete(response);
+            future.complete(response);  // compute the result
         }
     }
 
     public String waitForSecondResponse(String id) throws ExecutionException, InterruptedException {
         CompletableFuture<String> future = futureMap.computeIfAbsent(id, k -> new CompletableFuture<>());
-        return future.get();
+        return future.get();  // block the thread
     }
 
     public void reset(String id) {
